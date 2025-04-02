@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Roasting Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coffee Roasting Inventory</h1>
+
+    <div id="inventoryTableDiv">
+      <h2>Inventory Management</h2>
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Coffee Bean Type</th>
+            <th>Subscription Demand (lbs/week)</th>
+            <th>Prior Week Sales (lbs)</th>
+            <th>This Week Sales (lbs)</th>
+            <th>Total Demand (lbs)</th>
+            <th>Amount to Roast (lbs)</th>
+            <th>Available Beans (lbs)</th>
+          </tr>
+        </thead>
+        <tbody id="inventoryTableBody">
+        </tbody>
+      </table>
+      <button id="blendingNavigation">Go to Blending</button>
+    </div>
+
+    <div id="blendingTableDiv" style="display: none;">
+      <h2>Blending Table</h2>
+      <button id="addRegion">Add Region</button>
+      <table id="blendingTable">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Available Beans (lbs)</th>
+            <th>Select for Blend</th>
+          </tr>
+        </thead>
+        <tbody id="blendingTableBody">
+        </tbody>
+      </table>
+      <button id="blendButton">Blend</button>
+      <button id="inventoryNavigation">Go to Inventory</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
